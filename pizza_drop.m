@@ -61,7 +61,7 @@ for i = 2:num_steps
   end
 end
 
-plot_choice = 1; #(or 2 or 3)
+plot_choice = 3; #(or 2 or 3)
 if(plot_choice==1)
   # plot the pizza's height
   ground=0.0;
@@ -74,13 +74,13 @@ if(plot_choice==1)
   # fancy title via 
   # ghttps://www.mathworks.com/matlabcentral/answers/154272-input-a-variable-into-a-plot-title
   title([num2str(num_steps),' simulation steps, with dt = ',num2str(dt)," sec"])
-elseif (plotchoice==2) 
+elseif (plot_choice==2) 
   # or, plot the pizza's velocity
   plot(t,v)
   ylabel("velocity, v, (m/s)")
   xlabel("time, t, (s)")
   title([num2str(num_steps),' simulation steps, with dt = ',num2str(dt)," sec"])
-elseif (plotchoice==3)
+elseif (plot_choice==3)
   # or, plot the pizza's velocity
   plot(t,f)
   ylabel("net force , F_{net}, (m/s)")
